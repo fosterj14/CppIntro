@@ -20,4 +20,7 @@ int main() {
 	cout << test << endl;
 	cout << boolalpha; //changes to true/false
 	cout << test << endl;
+
+	//conditional operator - ternary
+	//(bool) ? if_true : if_false
 }
