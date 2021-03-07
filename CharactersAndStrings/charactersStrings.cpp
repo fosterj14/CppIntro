@@ -49,13 +49,14 @@ int main() {
 	//string_name += " more" concatenates
 	string s1;
 	getline(cin, s1); //this will read the entire line until \n (enter)
+	cout << s1 << endl;
 	getline(cin, s1, 'x'); //this will stop capturing the string at the specified character
 	//when using + to concatenate strings, at least 1 C++ string object needs to be involved. strcat needs to be used for putting C-style strings together (e.g. "hello" + "there" won't work)
 	size_t position = s1.find("word");
 	if (position != string::npos) { //npos means no position, so if "word" is found in s1, then it goes to the first statement. if the word is not found, the position = no position
-		cout << "found" << "word" << " at position: " << position << endl;
+		cout << "found " << "word" << " at position: " << position << endl;
 	}
 	else {
-		cout << "Sorry, " << "word" << "not found" << endl;
+		cout << "Sorry, " << "word" << " not found" << endl;
 	}
 }
